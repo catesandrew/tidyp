@@ -296,7 +296,7 @@ static Bool CanPrune( TidyDocImpl* doc, Node *element )
     if (nodeIsCOLGROUP(element))
         return no;
 
-    return yes;
+    return no;
 }
 
 /* return next element */

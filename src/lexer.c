@@ -2405,7 +2405,7 @@ static Node* GetTokenFromStream( TidyDocImpl* doc, GetTokenMode mode )
                         if ( !cfgBool(doc, TidyMakeClean) ||
                              ( !nodeIsNOBR(curr) && !nodeIsWBR(curr) ) )
                         {
-                            TY_(ReportError)(doc, NULL, curr, PROPRIETARY_ELEMENT );
+                            //TY_(ReportError)(doc, NULL, curr, PROPRIETARY_ELEMENT );
 
                             if ( nodeIsLAYER(curr) )
                                 doc->badLayout |= USING_LAYER;

@@ -937,7 +937,7 @@ const Attribute* TY_(CheckAttribute)( TidyDocImpl* doc, Node *node, AttVal *attv
 
     if (AttributeIsProprietary(node, attval))
     {
-        TY_(ReportAttrError)(doc, node, attval, PROPRIETARY_ATTRIBUTE);
+        //TY_(ReportAttrError)(doc, node, attval, PROPRIETARY_ATTRIBUTE);
 
         if (cfgBool(doc, TidyDropPropAttrs))
             TY_(RemoveAttribute)( doc, node, attval );
